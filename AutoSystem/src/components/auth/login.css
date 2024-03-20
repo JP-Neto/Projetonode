@@ -1,0 +1,148 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form-container {
+    border: 1px solid #33c3f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px; 
+    padding: 20px;
+    width: 540px;
+    margin: 0 auto;
+  } 
+
+  .container .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .container .header span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  
+  .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container form  .inputContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .container form  .inputContainer label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  
+  .container form  .inputContainer input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 520px;
+    height: 49px;
+    border: 1px solid #33c3f0;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  
+  }
+  
+  .container form a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #33c3f0;
+  }
+  
+  .container form .button {
+    width: 520px;
+    height: 48px;
+    background: #33c3f0;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .container form .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .container .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ou 'row' se você quer tudo na mesma linha */
+  }
+  
+  .container .footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-align: center; 
+  }
+  
+  .container form .footer a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #33c3f0;
+  }
+  
+  .google-button {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    background: #fff; 
+    border: 1px solid #ccc; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    overflow: hidden;
+    border-color: #33c3f0;
+  }
+  
+  .google-icon {
+    width: 30px; 
+    height: 30px; 
+  }
+  
+  .google-button:hover {
+    background: #eee; 
+  }
+  

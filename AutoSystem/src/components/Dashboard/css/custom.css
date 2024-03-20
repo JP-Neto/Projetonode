@@ -1,0 +1,280 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/*new buttons*/
+.button-sucess {
+   background-color: #28a745;
+   color: #ededed;
+}
+
+.button-sucess:hover {
+   background-color: #28a745;
+   color: #ededed;
+}
+
+
+.button-outline {
+   border-color: #33C3F0;
+   color: #33C3F0;
+}
+
+.button-outline:hover {
+   border-color: #066581;
+   color: #066581;
+}
+
+ 
+
+ 
+
+/*end new buttons*/
+
+ .card1{
+    width: 100%;
+    min-height: 350px;    
+    border-radius: 8px;
+     background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px;
+  padding-top: 20px;
+ }
+
+ .tcard{
+    margin: 30px;
+    color: #33c3f0;
+    
+ }
+
+ .pcard{
+    margin: 30px;
+    color: #646566;
+    text-align: justify;
+ }
+
+ .align-card {
+   display: flex;
+   justify-content: center;
+ }
+
+ /*---------------------*/
+.high-main{
+   background-color: #ededed;
+   width: 100%;
+   height: 1000px;
+}
+ .header-high {
+   width: 100%;
+   height: 45px;
+   background-color:#33c3f0;   
+ }
+
+ .header-content {    
+   /* background-color: #5bf033; */
+   background-color: #33c3f0;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    padding: 5px;
+    height: 35px;
+    color: aliceblue;
+ }
+
+ .header-brand {
+   margin-top: 10px;  
+   width: 300px;   
+ }
+
+ .brand { 
+   width: 200px;
+   font-weight: bold;
+   padding: 5px;
+   height: 42px;
+ }
+
+ .header-menu {
+  /* background-color: aqua; */
+   padding: 5px;
+   margin-right: 34px;
+ }
+
+ .header-menu li {
+   list-style-type: none;
+   display: inline;
+   margin-left: 10px;
+   
+ }
+
+ .header-menu li a {
+   text-decoration: none;
+   color: aliceblue;
+   
+ }
+
+ .header-menu li a:hover {
+   text-decoration: underline;
+   
+ }
+
+ .header-page {   
+   width: 100%;
+   height: 45px;  
+   padding-top: 10px;   
+     
+ }
+
+ .title-page {  
+   display: flex;
+   flex-direction: inherit;
+   justify-content: space-between;    
+   height: 35px;
+   color:#000;
+   margin-left: 60px;
+    
+ }
+ 
+ .content-header-page {  
+   display: flex;
+   flex-direction: inherit;
+   justify-content: space-between;    
+   height: 35px;
+   color: aliceblue;
+   margin-right: 40px;
+    
+ }
+
+ .action-page {
+   display: flex;
+   justify-content: space-between;
+
+ }
+
+ .action-button-page {
+   margin-left: 4px;
+ }
+
+
+
+ .content-page {
+  border-radius: 6px;
+    background-color: #FFF;
+    height: auto;
+    padding: 20px;
+	margin:5px;
+ }
+
+ @media (max-width: 500px) {
+	  .high-main {
+		height: auto;
+	  }
+	  .header-high {
+		height: 132px;
+
+	  }
+	  .header-content {
+		display: block;
+		height: 100px;
+	  }
+	  
+
+	  .content-header-page {
+		display: block;
+		margin-right: 10px;
+	  }
+	  .action-page {
+		display: block;
+		margin-right: 0;
+	 }
+
+	 .header-page {
+	  width: 100%;
+	  height: 170px;
+	  padding-top: 10px;
+	  margin-right: 0;
+	  
+	}
+
+	.action-button-page {
+	  width: 100%;
+	  margin-right: 0;
+	}
+}
+
+.size-full {
+  width: 100%;
+}
+/*custom css form*/
+
+.data-calendar {
+	padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #bdbbbb;
+}
+
+
+.confirmation-message{
+  color:#28a745
+}
+
+.table-overflow {
+  overflow: auto;
+}
+
+.acoes {
+  display: flex;
+  justify-content: end;
+width: 100%;
+  
+}
+
+.full{
+  width: 100%;
+}
+
+/* User Profile Styles */
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre elementos */
+}
+
+.user-name {
+  font-size: 2rem; /* Tamanho da fonte para o nome do usuário */
+  color: aliceblue; /* Cor da fonte */
+  margin-right: 10px; /* Espaço à direita do nome */
+}
+
+.user-image {
+  width: 35px; /* Tamanho da imagem do usuário */
+  height: 35px; /* Tamanho da imagem do usuário */
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+}
+.button-user {
+  font-size: 1rem; /* Ajuste para o tamanho de fonte desejado */
+  color: aliceblue; /* Cor da fonte */
+  background: transparent; /* Fundo transparente */
+  border: none; /* Sem borda */
+  padding: 1; /* Sem preenchimento */
+  margin: 0; /* Sem margem externa */
+  cursor: pointer; /* Cursor como ponteiro */
+  height: 35px;
+  display: inline-flex; /* Mantém o botão na linha e permite flexibilidade interna */
+  border-radius: 4px; /* Raio da borda para o botão, se necessário */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.button-user:hover {
+  background-color: #48ccf5; /* Cor de fundo ao passar o mouse */
+  color: white; /* Cor do texto ao passar o mouse */
+  border-color: #48ccf5; /* Cor da borda ao passar o mouse */
+  text-decoration: none; /* Garante que não haja sublinhado no texto */
+  /* Adicionais, como uma sombra para efeito 3D, se desejado */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+}
