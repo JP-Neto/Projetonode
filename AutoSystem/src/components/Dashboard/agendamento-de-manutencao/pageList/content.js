@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../../css/custom.css';
 
 const Manutencoes = () => {
   const [manutencoes, setManutencoes] = useState([]);
@@ -56,26 +57,26 @@ const Manutencoes = () => {
                   <td>{manutencao.manutencao_obs}</td>
                   <td>
                     <Link to={`/manutencao/${manutencao.id}`}>
-                      <button className='form-button'>Editar</button>
+                      <button className='form-button button-edit'>Editar</button>
                     </Link>
                   </td>
                   <td>
-                    <button className='form-button' onClick={() => handleDelete(manutencao.id)}>Excluir</button>
+                    <button className='button-exclude' onClick={() => handleDelete(manutencao.id)}>Excluir</button>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
           <div className="acoes">
-                                         <div >
-                                        <Link to="/novoabastecimento">
-                                            <button>Adicionar Abastecimento</button>
-                                        </Link>
-                                        <Link to="/dashboard">
-                                            <button>Voltar ao Dashboard</button>
-                                        </Link>
-                                        </div>
-                    </div>
+            <div >
+              <Link to="/novoabastecimento">
+                <button className='button-primary'>Adicionar Abastecimento</button>
+              </Link>
+              <Link to="/dashboard">
+                <button className='action-button button-cancel'>Voltar ao Dashboard</button>
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </div>

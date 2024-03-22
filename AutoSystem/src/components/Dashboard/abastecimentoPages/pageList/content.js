@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import '../../css/custom.css';
+import { Button } from 'react-bootstrap';
 const Abastecimentos = () => {
     const [abastecimentos, setAbastecimentos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -60,11 +61,11 @@ const Abastecimentos = () => {
                                     <td>{abastecimento.endereco}</td>
                                     <td>
                                         <Link to={`/abastecimentos/${abastecimento.id}`}>
-                                            <button>Editar</button>
+                                            <button className='button-edit'>Editar</button>
                                         </Link>
                                     </td>
                                     <td>
-                                        <button onClick={() => handleDelete(abastecimento.id)}>Excluir</button>
+                                        <Button className='button-exclude' onClick={() => handleDelete(abastecimento.id)}>Excluir</Button>
                                     </td>
 
                                 </tr>
@@ -75,10 +76,10 @@ const Abastecimentos = () => {
                     <div className="acoes">
                                          <div >
                                         <Link to="/novoabastecimento">
-                                            <button>Adicionar Abastecimento</button>
+                                            <button className='button-primary'>Adicionar Abastecimento</button>
                                         </Link>
                                         <Link to="/dashboard">
-                                            <button>Voltar ao Dashboard</button>
+                                            <button className='action-button button-cancel'>Voltar ao Dashboard</button>
                                         </Link>
                                         </div>
                     </div>

@@ -36,8 +36,8 @@
 /*end new buttons*/
 
  .card1{
-    width: 100%;
-    min-height: 350px;    
+    width: max-content;
+    min-height: 400px;    
     border-radius: 8px;
      background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -55,7 +55,7 @@
  .pcard{
     margin: 30px;
     color: #646566;
-    text-align: justify;
+    text-align:center;
  }
 
  .align-card {
@@ -83,7 +83,7 @@
     justify-content: space-between;
     padding: 5px;
     height: 35px;
-    color: aliceblue;
+    color: #f0f8ff;
  }
 
  .header-brand {
@@ -91,11 +91,13 @@
    width: 300px;   
  }
 
- .brand { 
-   width: 200px;
-   font-weight: bold;
-   padding: 5px;
-   height: 42px;
+ .brand img{ 
+   width: 100px;
+   padding-top: 5px;
+   padding-left: 5px;
+ }
+ .brand .autosystem-button{
+  border: none;
  }
 
  .header-menu {
@@ -124,7 +126,7 @@
 
  .header-page {   
    width: 100%;
-   height: 45px;  
+   height: 55px; 
    padding-top: 10px;   
      
  }
@@ -135,7 +137,9 @@
    justify-content: space-between;    
    height: 35px;
    color:#000;
-   margin-left: 60px;
+   margin: 9px;
+   margin-left: 28px;
+   padding-top: 5px;
     
  }
  
@@ -149,16 +153,9 @@
     
  }
 
- .action-page {
-   display: flex;
-   justify-content: space-between;
-
+ .navegation-title{
+  padding-bottom: 5px;
  }
-
- .action-button-page {
-   margin-left: 4px;
- }
-
 
 
  .content-page {
@@ -271,10 +268,56 @@ width: 100%;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 .button-user:hover {
-  background-color: #48ccf5; /* Cor de fundo ao passar o mouse */
+  background-color: #066581; /* Cor de fundo ao passar o mouse */
   color: white; /* Cor do texto ao passar o mouse */
-  border-color: #48ccf5; /* Cor da borda ao passar o mouse */
+  border-color: #066581; /* Cor da borda ao passar o mouse */
   text-decoration: none; /* Garante que não haja sublinhado no texto */
   /* Adicionais, como uma sombra para efeito 3D, se desejado */
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
+.full th {
+  text-align: center;
+}
+
+.action-button {
+  margin: 1rem;
+}
+
+
+.button-exclude {
+  background-color: rgb(230, 43, 43);
+  color: #FFF;
+  border: 0;
+}
+
+.button-exclude:hover {
+  background-color: rgb(207, 37, 37);
+  color: #FFF;
+  border: 0;
+}
+
+.button-edit {
+  background-color: rgb(248, 199, 62);
+  color: #FFF;
+  border: 0;
+}
+
+.button-edit:hover {
+  background-color: rgb(233, 186, 58);
+  color: #FFF;
+  border: 0;
+}
+
+.button-cancel {
+  background-color: rgb(186, 189, 192);
+  color: #FFF;
+  border: 0;
+}
+
+.button-cancel:hover {
+  background-color: rgb(174, 178, 182);
+  color: #FFF;
+  border: 0;
+}
+

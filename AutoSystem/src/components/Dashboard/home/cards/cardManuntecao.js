@@ -10,7 +10,7 @@ const CardManutencao = () => {
     <img src={manutencao} alt="Descrição da imagem" width={85} />
     <h5 className='tcard'>Manutenção</h5>
     <p className='pcard'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et arcu mauris. Ut vehicula.
+    Mantenha seus veículos sempre prontos. Programe manutenções, atualize serviços e gerencie históricos com facilidade.
     </p>
     <Link to="/manutencoes">
       <button className='button-primary'>Acessar Manutenções</button>

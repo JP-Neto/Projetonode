@@ -11,7 +11,7 @@ const CardAbastecimento = () => {
     <img src={abastecimento} alt="Descrição da imagem" width={85} />
     <h5 className='tcard'>Abastecimento</h5>
     <p className='pcard'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et arcu mauris. Ut vehicula.
+    Controle eficiente de combustível. Registre abastecimentos, acompanhe gastos e ajuste dados para melhor gestão.
     </p>
     <Link to="/abastecimentos">
       <button className='button-primary'>Acessar Abastecimento</button>

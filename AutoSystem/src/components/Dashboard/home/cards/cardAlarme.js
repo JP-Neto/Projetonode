@@ -9,7 +9,7 @@ const CardAlarme = () => {
     <img src={clocks} alt="Descri��o da imagem" width={85} />
     <h5 className='tcard'>Em Breve..</h5>
     <p className='pcard'>
-      Em Breve...
+      Novas funções chegando para impulsionar seu negócio. Aguarde por recursos que vão simplificar ainda mais a gestão operacional.
     </p>
     <button className='button-primary'>Acessar Em Breve..  </button>
   </div>  

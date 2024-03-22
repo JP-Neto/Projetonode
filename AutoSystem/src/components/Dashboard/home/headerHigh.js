@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { fetchUserData, updateUserPhotoURL } from '../../../Services/firebase/databaseService.js';
+import AutosystemLogo from '../img/autosystem.png'
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 import '../css/normalize.css';
 import '../css/skeleton.css';
 import '../css/custom.css';
-import { Link } from 'react-router-dom';
+
 
 //import carrinho from './carrinho.png';
 
@@ -26,7 +29,13 @@ const HeaderHigh = () => {
 
     return <div className="header-high ">
               <div className='header-content'>
-                  <div className='brand'>Auto System</div>
+                  <div className='brand'>
+                  <Button variant="outline-primary" className="autosystem-button">
+                    <Link to="/dashboard">
+                      <img src={AutosystemLogo} alt="Auto System" />
+                    </Link>
+                  </Button>
+                  </div>
                   <div className='user'>
                       {user ? (
                       <div className="user-profile">

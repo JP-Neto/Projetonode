@@ -6,7 +6,7 @@ import { loginUserWithEmailAndPassword, loginUserWithGoogle, checkRedirectResult
 import { Form, Button } from 'react-bootstrap';
 import './login.css'
 import googleIcon from'./google.png'
-
+import AutosystemLogo from './autosystem-logo.png'
 // Definindo o componente funcional 'Login'
 const Login = () => {
   // Inicialização dos estados para email, senha, erro, e carregamento
@@ -81,7 +81,7 @@ const Login = () => {
       {loading && <LoadingScreen />}
       <div className="form-container">
         <div className="header">
-          <h1>Auto System</h1>
+          <img src={AutosystemLogo} alt="Auto System" className="autosystem-logo" />
           <span>Entre com sua conta</span>
         </div>
         <Form onSubmit={handleLogin}>

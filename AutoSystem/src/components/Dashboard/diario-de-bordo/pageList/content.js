@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../../css/custom.css';
 
 const Viagens = () => {
     const [viagens, setViagens] = useState([]);
@@ -54,7 +55,6 @@ const Viagens = () => {
                         <tbody>
                             {viagens.map((viagem) => (
                                 <tr key={viagem.id}>
-                                    <td>{viagem.id}</td>
                                     <td>{viagem.dataViagem}</td>
                                     <td>{viagem.destino}</td>
                                     <td>{viagem.combustivel}</td>
@@ -65,25 +65,25 @@ const Viagens = () => {
                                     <td>{viagem.obs}</td>
                                     <td>
                                         <Link to={`/atualizarviagem/${viagem.id}`}>
-                                            <button>Editar</button>
+                                            <button className='button-edit'>Editar</button>
                                         </Link>
                                     </td>
                                     <td>
-                                        <button onClick={() => handleDelete(viagem.id)}>Excluir</button>
+                                        <button className='button-exclude' onClick={() => handleDelete(viagem.id)}>Excluir</button>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                     <div className="acoes">
-                                         <div >
-                                        <Link to="/novoabastecimento">
-                                            <button>Adicionar Abastecimento</button>
-                                        </Link>
-                                        <Link to="/dashboard">
-                                            <button>Voltar ao Dashboard</button>
-                                        </Link>
-                                        </div>
+                        <div >
+                            <Link to="/novoabastecimento">
+                                <button className='button-primary'>Adicionar Abastecimento</button>
+                            </Link>
+                            <Link to="/dashboard">
+                                <button className='action-button button-cancel'>Voltar ao Dashboard</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )}

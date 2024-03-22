@@ -10,12 +10,12 @@ const CardDiarioDeBordo = () => {
     <img src={carrinho} alt="Descrição da imagem" width={85} />
     <h5 className='tcard'>Viagens</h5>
     <p className='pcard'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et arcu mauris. Ut vehicula.
+    Organize e monitore suas viagens facilmente. Visualize rotas, registre despesas e atualize informações em um único lugar.
     </p>
     <Link to="/viagens">
       <button className='button-primary'>Acessar Viagens</button>
     </Link>
-  </div>  
+  </div>
 }
 
 
